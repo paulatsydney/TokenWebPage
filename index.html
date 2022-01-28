@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bloomberg Token - Decentralize global philanthropic activities."
+    />
+    <meta
+      property="og:title"
+      content="Bloomberg Token - Decentralize global philanthropic activities."
+    />
+    <meta
+      property="og:description"
+      content="Bloomberg Token is a ERC20 token. It's designed to play a vital role for philanthropic responsibilities."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="http://BloombergToken.com/images/bloombergToken_32.png"
+    />
+    <meta property="og:url" content="http://BloombergToken.com" />
+    <title>Bloomberg Token - A Decentralized Ecosystem</title>
+    <link rel="icon" href="images/bloombergToken_32.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/bloombergToken_32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/bloombergToken_32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav collapsible">
+        <div class="nav__brand">
+          <svg class="logo">
+            <use xlink:href="images/mySprite.svg#logo"></use></svg
+          ><span class="logo__font">BLOOMBERG TOKEN</span>
+        </div>
+        <svg class="icon icon--white nav__toggler">
+          <use href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a
+              target="_blank"
+              href="https://etherscan.io/address/0x165997aafa86ad7faa9906b6c8ed15d536e65bf6#code"
+              >Etherscan</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#footer">Contact Us</a>
+          </li>
+          <li class="nav__item">
+            <a target="_blank" href="https://app.uniswap.org/#/swap"
+              >Get Token</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h2 data-aos="zoom-in-up" class="block__heading">
+            A Decentralized Meme Token that Specialized for Philanthropy
+          </h2>
+          <p class="hero__tagline">
+            Bloomberg Token, fulfills ERC20 Standard, is designed to play a
+            vital role for philanthropic responsibilities.
+          </p>
+          <a href="#sectionQuickStart" class="btn btn--accent btn--stretched"
+            >How to Buy</a
+          >
+        </header>
+        <picture data-aos="zoom-in">
+          <!-- <source
+            type="image/webp"
+            srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x"
+          /> -->
+          <img class="hero__image" src="images/goldenShield.png" alt="" />
+        </picture>
+      </div>
+    </section>
+    <section data-aos="zoom-in-up" class="block container block-domain">
+      <header class="block__header">
+        <h2>Token Address on Ethereum</h2>
+        <p>
+          This address uniquely identifies Bloomberg Token on Ethereum Mainnet.
+        </p>
+        <p>
+          You can search this address on Etherscan to verify all technical
+          details.
+        </p>
+      </header>
+      <div class="input-group">
+        <input
+          id="addressInput"
+          aria-label="Domain"
+          type="text"
+          class="input"
+          placeholder="Bloomberg Coin Address"
+          value="0x165997aaFa86aD7FAa9906B6c8ED15d536E65Bf6"
+        />
+        <button
+          id="btnCopyAddress"
+          class="btn btn--accent btn--short"
+          onclick="copyAddress()"
+        >
+          <svg class="icon icon--white">
+            <use href="images/sprite.svg#copy"></use></svg
+          >Copy to Clipboard
+        </button>
+      </div>
+    </section>
+    <section data-aos="fade-up" class="block container block-plans">
+      <div class="grid">
+        <div class="plan">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">ERC-20 Coin</h3>
+              <span class="plan__price">$BLBG</span>
+              <span class="plan__billing-cycle">/Bloomberg Token</span>
+              <span class="badge badge--primary badge--small">VERIFIED</span>
+              <span class="plan__description"
+                >Rapid growth with strong industry support</span
+              >
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Standard ERC20 Token</li>
+                <li class="list__item">Pass Etherscan Verfication</li>
+                <li class="list__item">Fixed Global Supply</li>
+                <li class="list__item">Listed on Uniswap and DEXs</li>
+              </ul>
+              <button
+                class="btn btn--outline btn--block"
+                onclick="window.open('https://app.uniswap.org/#/swap', '_blank')"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sectionQuickStart" class="block container">
+      <header class="block__header">
+        <h2>Quick Start Guide</h2>
+        <p>Secure Platform, Easy to Transact, Trending.</p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <img class="icon" src="images/metamaskFox.svg" alt="" />
+          </span>
+          <h3 class="feature__heading">Create MetaMask wallet</h3>
+          <p>
+            Create a MetaMask Wallet using either a desktop computer or an
+            iOS/Andriod mobile device. That will allow you to buy, sell, send
+            and receive Bloomberg Coin or any other cryptocurrency.
+          </p>
+          <a href="https://metamask.io/" target="_blank" class="link-arrow"
+            >Learn More</a
+          >
+        </div>
+        <picture data-aos="zoom-in-left">
+          <!-- <source
+            type="image/webp"
+            srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
+          /> -->
+          <img
+            class="feature__image"
+            src="images/MM KB chrome install 1.jpg"
+            alt=""
+          />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-up">
+          <span class="icon-container">
+            <img class="icon" src="images/ethereum-eth-logo.svg" alt="" />
+          </span>
+          <h3 class="feature__heading">Send ETH to your wallet</h3>
+          <p>
+            You can buy Ethereum (ETH) directly on Metamask or transfer it to
+            your MetaMask Wallet from exchanges like Coinbase, Binance, etc.
+            Make sure to use the ERC-20 network when transfering ETH.
+          </p>
+          <a
+            href="https://metamask.zendesk.com/hc/en-us/articles/360058239311-How-to-buy-ETH"
+            target="_blank"
+            class="link-arrow"
+            >Learn More</a
+          >
+        </div>
+        <picture>
+          <!-- <source
+            type="image/webp"
+            srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"
+          /> -->
+          <img
+            class="feature__image"
+            src="images/metamask-mobile-featured-3.png"
+            alt=""
+          />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-up">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#uni"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Connect your wallet to Uniswap</h3>
+          <p>
+            Access your wallet to Uniswap by Clicking 'Connect to a wallet' and
+            approving on MetaMask.
+          </p>
+          <a
+            href="https://help.uniswap.org/en/collections/3000035-getting-started"
+            target="_blank"
+            class="link-arrow"
+            >Learn More</a
+          >
+        </div>
+        <picture>
+          <!-- <source
+            type="image/webp"
+            srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"
+          /> -->
+          <img class="feature__image" src="images/connectWallet.png" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-left">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#clock"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Swap ETH for BLBG, Bloomberg Coin</h3>
+          <p>
+            You can start swapping as soon as you have ETH available! Press
+            'Select a token' and enter the token address or search for it on the
+            tokens list.
+          </p>
+          <a
+            href="https://help.uniswap.org/en/collections/3033938-swap"
+            target="_blank"
+            class="link-arrow"
+            >Learn More</a
+          >
+        </div>
+        <picture data-aos="fade-right">
+          <!-- <source
+            type="image/webp"
+            srcset="images/support.webp 1x, images/support@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/support.jpg 1x, images/support@2x.jpg 2x"
+          /> -->
+          <img
+            class="feature__image"
+            src="images/select-tokens-uniswap-how-to-use-uniswap.jpg"
+            alt=""
+          />
+        </picture>
+      </article>
+    </section>
+    <section class="block block--dark block--skewed-right block-showcase">
+      <header class="block__header">
+        <h2>Our Project Roadmap</h2>
+      </header>
+      <div class="container grid grid--1x2">
+        <picture data-aos="fade-right" class="block-showcase__image">
+          <!-- <source
+            type="image/webp"
+            srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
+          /> -->
+          <img src="images/TL _ Overview Dashboard.png" alt="" />
+        </picture>
+        <ul class="list" data-aos="fade-up" style="margin-left: 2rem">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary" style="fill: #d22d6c">
+                  <use href="images/sprite.svg#one"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">
+                  Decentralize Philanthropic Activities
+                </h3>
+                <p>
+                  From its beginning, Bloomberg Coin has done things
+                  differently. Our goal is to improve philanthropic related
+                  events effenciency. In this phase we connect with existing
+                  philanthropy organizations.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary" style="fill: #d22d6c">
+                  <use href="images/sprite.svg#two"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">
+                  Empower Individuals with Voting Rights
+                </h3>
+                <p>
+                  By holding the token, it gives individual voting right to
+                  determine what philanthropic activities to involve in.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary" style="fill: #d22d6c">
+                  <use href="images/sprite.svg#three"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Self-organized Ecosystem</h3>
+                <p>
+                  With the momentum, our ecosystem contributes to philanthropy
+                  globally from people in small group all over the world.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="block" data-aos="zoom-in">
+      <header class="block__header">
+        <h2>Why We Do This</h2>
+        <p>
+          As the name implies, we are inspired by Bloomberg Philanthropies'
+          contribution to the lives of millions of people and the founder's
+          spirit.
+        </p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img src="images/trees.jpg" alt="" />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                I don't believe that government is good at picking technology,
+                particularly technology that is changing. By the time you get it
+                done and go through democracy, it's so outdated.
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                      <use href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">
+                      Michael Bloomberg
+                    </h3>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="callout callout--primary callout-signup">
+        <div class="grid grid--1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready to Get Started?</h2>
+            <p>
+              Get your Bloomberg Coin on Uniswap to join our decentralized
+              philanthropic movement.
+            </p>
+          </div>
+          <a href="#sectionQuickStart" class="btn btn--secondary btn--stretched"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Contact Us</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><span>EMAIL: Concierge@BloombergToken.com</span></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__brand">
+          <svg class="logo">
+            <use xlink:href="images/mySprite.svg#logo"></use></svg
+          ><span class="logo__font">BLBG</span>
+          <p class="footer__copyright">2022 Bloomberg Token</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
