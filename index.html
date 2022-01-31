@@ -64,9 +64,22 @@
             <a href="#footer">Contact Us</a>
           </li>
           <li class="nav__item">
-            <a target="_blank" href="https://quickswap.exchange/#/swap"
+            <!-- <a target="_blank" href="https://quickswap.exchange/#/swap"
               >Get Token</a
-            >
+            > -->
+            <div class="dropDown">
+              <a onclick="myFunction()" class="dropbtn">Get Token</a>
+              <div id="myDropdown" class="dropdown-content">
+                <a
+                  target="_blank"
+                  href="https://app.uniswap.org/#/swap?chain=polygon"
+                  >Uniswap</a
+                >
+                <a target="_blank" href="https://quickswap.exchange/#/swap"
+                  >QuickSwap</a
+                >
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -139,7 +152,9 @@
                 <li class="list__item">Standard ERC20 Token</li>
                 <li class="list__item">Pass PolygonScan Verfication</li>
                 <li class="list__item">Fixed Global Supply</li>
-                <li class="list__item">Listed on QuickSwap and other DEXs</li>
+                <li class="list__item">
+                  Listed on QuickSwap, Uniswap and other DEXs
+                </li>
               </ul>
               <button
                 class="btn btn--outline btn--block"
@@ -241,9 +256,9 @@
           </span>
           <h3 class="feature__heading">Swap MATIC for BLBG, Bloomberg Coin</h3>
           <p>
-            You can start swapping on QuickSwap or other DEXs as soon as you
-            have MATIC available! Press 'Select a token' and enter the token
-            address or search for it on the tokens list.
+            You can start swapping on QuickSwap as soon as you have MATIC
+            available! Press 'Select a token' and enter the token address or
+            search for it on the tokens list.
           </p>
           <a
             href="https://academy.binance.com/en/articles/what-is-quickswap-and-how-does-it-work"
@@ -254,6 +269,31 @@
         </div>
         <picture data-aos="fade-right">
           <img class="feature__image" src="images/qsSwap.PNG" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-left">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#uni"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Swap via Uniswap</h3>
+          <p>
+            Instead of using QuickSwap, you can use another popular DEX Uniswap
+            to get Bloomberg Token. Make sure that you switch to Polygon network
+            in top right network list. Press 'Select a token' and enter the
+            token address to proceed with the swap.
+          </p>
+          <a
+            href="https://help.uniswap.org/en/collections/3000035-getting-started"
+            target="_blank"
+            class="link-arrow"
+            >Learn More</a
+          >
+        </div>
+        <picture data-aos="fade-right">
+          <img class="feature__image" src="images/SwapOnUniswap.PNG" alt="" />
         </picture>
       </article>
     </section>
@@ -374,8 +414,8 @@
           <div class="callout__content">
             <h2 class="callout__heading">Ready to Get Started?</h2>
             <p>
-              Get your Bloomberg Coin on QuickSwap to join our decentralized
-              philanthropic movement.
+              Get your Bloomberg Coin on QuickSwap or Uniswap to join our
+              decentralized philanthropic movement.
             </p>
           </div>
           <a href="#sectionQuickStart" class="btn btn--secondary btn--stretched"
